@@ -1,0 +1,53 @@
+.titulo-principal{
+    padding-left: 30px;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #CCCCCC;
+    padding: 20px;/*es para darle un espaciamiento, estas medidas pueden ser en porsentaje o pixeles*/
+}
+.titulo-centralizado{/*las clases se pueden utilizar las veces que sean en diferentes partes*/
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.items{
+    font-size: italic;
+}
+
+ul{
+    display: inline-block;/*es para decirle al ul que ocupe solo el espacio de su contenido y que los espacimientos se puedan ajustar para poder asi acomodar la imagen*/
+    vertical-align: top;/*es para alinear la imagen hacia arriba con la primera linea de la lista*/
+    width: 20%;/*es el tamaño que va a ocupar la letra*/
+    margin-right: 15%;/*es un margen para poder separa a imagen del texto*/
+}
+
+.imagenDiferencial{
+    width: 50%;
+}
+/*normalmente se crea un archivo aparte como este para poner todo lo de ccs y despues referenciarlo para poder tener un codigo más optimizado
+los colores se indican por nombre o por codigo exadecimal(0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F es una escala de colores) y cada numero serie de numeros indican un color, hay paguinas en internet donde ya vienen los codigos de cada color, el 000000 es lo menor e inidca negro y ffffff es blanco que es lo maximo 
+height 150px pone un espacio debajo de cada linea
+border: 10px solid #000000 este codigo pone un margen de 10 px negro
+padding 20px es un espaciamiento interno que se le da a los margenes 
+margin 40px es un espacio que se da al margen externo*/
