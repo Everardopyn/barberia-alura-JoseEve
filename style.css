@@ -11,25 +11,37 @@ header{
     width: 940px;/*esto es porque la mayoria de las pc tienen 1270 pixeles y en otras pc ocupa el 70%*/
     position: relative;/*esta posicion relativa es de acuerdo a la posicion absoluta de abajo*/
     margin: 0 auto;/*el 0 es para los margenes arriba, abajo y el automatico es para los lados para evitar hacer malos calculos y que sin importar el tamaño de la pantalla siempre quede enmedio*/
+    display: flex;
+    align-items: center;
+}
+
+.header__img{
+    height: 7rem;
 }
 
 nav{
-    position: absolute;
+    /*position: absolute;
     top: 110px;
-    right: 0;
+    right: 0;*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 22px;
+
 }
 
-nav li{/*se tiene que especificar en este caso se estan poniendo dos etiquetas*/
+nav li{/*se tiene que especificar en este caso porque se estan poniendo dos etiquetas*/
     display: inline;
-    margin: 0 0 0 15px;/*tiene 4 parametros para cada lado de margen (arriba, der, abajo, izq)*/
+    margin: 0 0 0 1.5rem;/*tiene 4 parametros para cada lado de margen (arriba, der, abajo, izq)*/
 }
 
 nav a{
     text-transform: uppercase;/*pone la letra en mayusculas y se pone aqui y strong porque queremos cambiar el estilo y no la estructura*/
     color: #000000;
-    font-weight: bold;/*marca con negrita el texto*/
+    font-weight: bold;  /* marca con negrita el texto*/
     font-size: 22px;
     text-decoration: none;/*es para quitar el subrallado que se pone automaticamente*/
+
 }
 
 nav a:hover{
@@ -225,14 +237,16 @@ titulo-principal:after{
     background: #888888;
 }
 .contenido-diferenciales{
-    width: 640px;
-    margin: 0 auto;
+    width: 43rem;
+    margin: 4rem auto;
+    display: flex;
 }
 
 .lista-diferenciales{
     width: 40%;
     display: inline-block;
     vertical-align: top;/*el texto estaba alineado al lado de abajo de la imagen y es para que se alinee desde el lado de arriba*/
+    padding: 1rem;
 }
 
 .items{
@@ -262,6 +276,10 @@ titulo-principal:after{
     margin: 1em auto;
 }
 /*la jerarquia de importancia de seleccion es primero  id, class y etiqueta ya que tiene como mayor prioridad la id y se pide que cambie de color va a hacer caso a la id y no a la class, etiqueta ya que tiene un mayor peso hay una opcion que tiene aun mas peso es escribirlo en inline dentro de html como style="color: purple"*/
+
+.footer__img{
+    height: 7rem;
+}
 
 @media screen and (max-width:480px){
     h1{
