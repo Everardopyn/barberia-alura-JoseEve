@@ -230,8 +230,9 @@ titulo-principal:after{
 .mapa-contenido{
     width: 940px;
     margin: 0 auto;
-
 }
+
+
 .diferenciales{
     padding: 3em 0;
     background: #888888;
@@ -281,6 +282,35 @@ titulo-principal:after{
     height: 7rem;
 }
 
+@media (481px <= width <= 1200px){
+
+    .caja{
+        width: 90%;
+    }
+
+    nav li{
+        margin: 0 1rem;
+    }
+
+    .principal{
+        width: 90%;
+    }
+
+    .mapa-contenido{
+        width: auto;
+    }
+
+    .mapa{
+        width: 80%;
+        padding: 0 10%;
+        height: 17rem;
+    }
+
+    .diferenciales{
+        padding: 9rem 0 4rem 0;
+    }
+}
+
 @media screen and (max-width:480px){
     h1{
         text-align: center;
@@ -288,10 +318,52 @@ titulo-principal:after{
     nav{
         position: static;
     }
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+
+    .caja{
+        width: 90%;
+    }
+
+    nav li{
+        margin: 0 6rem;
+    }
+
+    .principal{
+        width: 90%;
+    }
+
+    .mapa-contenido{
+        width: auto;
+    }
+
+    .mapa{
+        width: 80%;
+        padding: 0 10%;
+        height: 17rem;
+    }
+
+    .diferenciales{
+        padding: 10rem 0 4rem 0;
+    }
+
+    .lista-diferenciales{
+        width: auto;
+    }
+
+    .contenido-diferenciales{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem auto;
+        width: auto;
+    }
+
+    .video{
+        width: 90%;
+    }
+
+    /*.caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
         width: auto;
     }
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
-    }
+    }*/
 }/*aqui se dice que si encunetra una pantalla con hasta 480px se aplique lo que se pone adentro*/
