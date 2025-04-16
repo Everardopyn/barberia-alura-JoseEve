@@ -125,7 +125,7 @@ form label, form legend{/*se puede usar selector de items como se esta usando se
 .input-padron{
     display: block;
     margin: 0 0 20px;
-    padding: 10px 25px;/*son para hacer los margenes del cuadro de texto mas grandes 10 para arriba, abajo y 25 para los lados*/
+    padding: 10px 24px;/*son para hacer los margenes del cuadro de texto mas grandes 10 para arriba, abajo y 25 para los lados*/
     width: 50%;/*es para que utilicen el 50% de los 940px de largo*/
 }
 
@@ -296,6 +296,22 @@ titulo-principal:after{
         width: 90%;
     }
 
+    .productos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .productos li{
+        width: 50%;
+        margin: 5%;
+
+    }
+
     .mapa-contenido{
         width: auto;
     }
@@ -309,12 +325,25 @@ titulo-principal:after{
     .diferenciales{
         padding: 9rem 0 4rem 0;
     }
+
+    .contenido-diferenciales{
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .video{
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width:480px){
+
     h1{
         text-align: center;
     }
+
     nav{
         position: static;
     }
@@ -324,11 +353,31 @@ titulo-principal:after{
     }
 
     nav li{
-        margin: 0 6rem;
+        margin: 0.4rem;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
     }
 
     .principal{
         width: 90%;
+    }
+
+    .productos{
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .productos li{
+        width: 96%;
+        margin: 5%;
+
     }
 
     .mapa-contenido{
@@ -338,7 +387,7 @@ titulo-principal:after{
     .mapa{
         width: 80%;
         padding: 0 10%;
-        height: 17rem;
+        height: 11rem;
     }
 
     .diferenciales{
@@ -366,4 +415,5 @@ titulo-principal:after{
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }*/
+
 }/*aqui se dice que si encunetra una pantalla con hasta 480px se aplique lo que se pone adentro*/
